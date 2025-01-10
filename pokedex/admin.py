@@ -9,7 +9,7 @@ class PokemonAdmin(admin.ModelAdmin):
 
 
 
-@admin.register(Trainer) #el @ es un decorador, se agreag el pokemon en este caso 
+@admin.register(Trainer) #el @ es un decorador, se agrega el pokemon en este caso 
 
 class TrainerAdmin(admin.ModelAdmin):
     pass
