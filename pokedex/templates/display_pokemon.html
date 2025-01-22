@@ -1,18 +1,13 @@
 {% extends "base.html" %}
-
-{% block title %}{{ pokemon.first_name}}{% endblock title %}
-
+{% block title %}{{ pokemon | capfirst }}{% endblock title %}
 {% block content %}
-
-    <h3> {{ pokemon| capfirst}}</h3>
-    <p>Detalles</p>
-    <ul>
-        <li>Entrenador: {{ pokemon.trainer}}</li>
-        <li>Altura: {{ pokemon.height}}</li>
-        <li>Peso: {{ pokemon.weight}}</li>
-        
-
-    <ul>
+  <p>Has elegido el pokemon: <strong>{{ pokemon | capfirst }}</strong></p>
+  <p>Informacion del pokemon</p>
+  <ul>
+      <li>Peso: {{pokemon.weight}}Kg.</li>
+      <li>Altura: {{pokemon.height}}cm.</li>
+      <li>Entrenador: {{pokemon.trainer}}</li>
+  </ul>
 {% endblock content %}
 
 
